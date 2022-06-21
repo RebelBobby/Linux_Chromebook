@@ -1,0 +1,18 @@
+# Credit https://mrchromebox.tech/#fwscript
+
+Due to recent changes in ChromeOS' security settings, you may need to use a new set of commands to run the Firmware Utility Script under ChromeOS. Running it under Linux can use the same old one-line command.
+Also, you must execute these commands **as a normal/non-root user**. Running them as root will break things.
+
+To download and run this script under ChromeOS or Linux, from a terminal/shell type:
+cd; curl -LO mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh
+and press enter.
+
+If ChromeOS gives a 'noexec' error (not warning) when running the above command, then instead use:
+cd; curl -LO mrchromebox.tech/firmware-util.sh
+sudo install -Dt /usr/local/bin -m 755 firmware-util.sh
+sudo firmware-util.sh
+and press enter. (copy/paste these to avoid typos)
+
+If you encounter certificate related errors when downloading the script from ChromeOS, then add -k to the curl command and script command to bypass SSL certificate checking as so:
+cd; curl -LOk mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh
+and press enter.
