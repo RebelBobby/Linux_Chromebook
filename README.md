@@ -6,5 +6,5 @@ A laptop you can keep in the trunk but just as good after some hacks. AFTER I bo
 It will show how to void write protect
 ===
 # My rig
-<img src="Linux.png" width=100>
-<img src="Parts.png" width=100>
+<img src="Linux.jpg" width=100>
+<img src="Parts.jpg" width=100>
